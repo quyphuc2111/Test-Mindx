@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Bài 1</h1>
+    <script>
+        function findOppsiteNumber(n, inputNumber) {
+            // console.log(inputNumber)
+
+
+            if (n % 2 == 0) {
+                if (n >= 4 && n <= 20) {
+                    if (0 <= inputNumber <= n - 1) {
+                        if (inputNumber >= 0 && inputNumber < n/2) {
+                            return inputNumber + n/2;
+                        } else {
+                            return inputNumber - n/2;
+                        }
+                    }
+                }
+            } else {
+                alert('n không hợp lệ')
+            }
+        }
+
+        var b = findOppsiteNumber(8, 7)
+        console.log(b)
+    </script>
+</body>
+
+</html>
